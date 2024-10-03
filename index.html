@@ -2,18 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website</title>
     <link href="/reset.css" rel="stylesheet" />
     <link href="/style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>This is a Heading</h1>
+    <h1>Welcome to my Website!</h1>
     <p>This is a paragraph.</p>
     <a href="/elements.html">Elements Page</a>
 
-    <div id="app"></div>
+    <div class="counter">
+      <h2>Counter</h2>
+      <button id="increment">+</button>
+      <button id="decrement">−</button>
+      <span id="count">0</span>
+    </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
