@@ -12,6 +12,10 @@
   --font-body: system-ui, sans-serif;
 }
 
+.rtl {
+  direction: rtl;
+}
+
 body {
   color: var(--color-primary);
   background-color: var(--color-background);
