@@ -1,0 +1,35 @@
+/* This is a custom font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+:root {
+  /* Define design token variables */
+  --color-text: #1a1a1a;
+  --color-background: #f5f5f5;
+  --color-highlight: #535bf2;
+
+  --font-titles: "Lexend";
+  --font-body: system-ui, sans-serif;
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-background);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-titles);
+}
+
+a {
+  color: var(--color-highlight);
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
