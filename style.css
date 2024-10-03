@@ -1,18 +1,19 @@
 /* This is a custom font from google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap");
 
 :root {
-  /* Define design token variables */
-  --color-text: #1a1a1a;
+  /* Define design variables */
+  --color-primary: #2b2d42;
+  --color-secondary: #bfc6d2;
   --color-background: #f5f5f5;
-  --color-highlight: #535bf2;
+  --color-accent: #535bf2;
 
-  --font-titles: "Lexend";
+  --font-titles: "Frank Ruhl Libre", serif;
   --font-body: system-ui, sans-serif;
 }
 
 body {
-  color: var(--color-text);
+  color: var(--color-primary);
   background-color: var(--color-background);
   font-family: var(--font-body);
   padding: 2rem;
@@ -26,20 +27,23 @@ nav {
   margin: 0 auto;
 }
 
-article {
-  margin-top: 3rem;
+article,
+nav {
+  padding: 1rem 0;
 }
 
 /* Text */
 p {
-  margin-top: 1rem;
-  margin-bottom: 0;
+  margin: 1rem 0;
 }
 
 ul,
 ol {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+li {
+  margin-top: 0.3rem;
 }
 
 h1,
@@ -49,42 +53,43 @@ h4,
 h5,
 h6 {
   margin-top: 1rem;
-  margin-bottom: 0;
   font-family: var(--font-titles);
+  font-weight: 500;
+  font-optical-sizing: auto;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 h3 {
-  font-size: 1.17em;
+  font-size: 1.5em;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 h5 {
-  font-size: 0.83em;
+  font-size: 1em;
 }
 
 h6 {
-  font-size: 0.67em;
+  font-size: 0.83em;
 }
 
 blockquote {
   padding-left: 1rem;
-  border-left: 2px solid var(--color-highlight);
+  border-left: 2px solid var(--color-secondary);
 }
 
 /* Links */
 a {
-  color: var(--color-highlight);
+  color: var(--color-accent);
   text-decoration: underline;
 }
 a:hover {
@@ -100,5 +105,13 @@ table {
 table td,
 table th {
   padding: 0.5rem;
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-secondary);
+}
+
+/* Forms */
+fieldset {
+  margin-top: 1.5rem;
+
+  border: 1px solid var(--color-secondary);
+  border-radius: 0.5rem;
 }
