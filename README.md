@@ -1,10 +1,6 @@
 # Assignment 1 - Personal Website
 
-This is a template for ex1 - personal website.
-
-The goal of the assignment is to get you to do some basic HTML and CSS editing
-to create a web page, and then deploy that to the web. This will demonstrate a
-basic understanding JavaScript, HTML and CSS.
+This is a template repo for ex1.
 
 ## How to use this template
 
