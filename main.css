@@ -1,6 +1,7 @@
 /* This is a custom font from google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap");
 
+/* what is :root? https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
 :root {
   /* Define design variables */
   --color-primary: #2b2d42;
@@ -18,10 +19,17 @@ body {
   color: var(--color-primary);
   background-color: var(--color-background);
   font-family: var(--font-body);
-  padding: 2rem;
 }
 
 /* Layout */
+main {
+  padding: 2rem;
+}
+
+header {
+  padding: 1rem;
+}
+
 main,
 header,
 nav {
