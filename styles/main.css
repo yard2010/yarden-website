@@ -1,3 +1,4 @@
+@import url("reset.css");
 /* This is a custom font from google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap");
 
@@ -33,7 +34,7 @@ header {
 main,
 header,
 nav {
-  max-width: 800px;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
