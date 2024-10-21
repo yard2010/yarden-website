@@ -1,6 +1,27 @@
-# Assignment 1 - Personal Website
+# Assignment 1 - Single Page Business Card
 
-This is a template repo for ex1.
+In this task, you need to create a single page personal **business card**.
+
+The business card must include the following essential **HTML elements**:
+- `<body>`
+- `<header>`
+- `<div>`
+- `<p>`
+- `<img>`
+
+Additionally, there should be a button that opens an additional information section using **JavaScript**.
+
+Apply **CSS styling** to the layout, including:
+- Font styles for the text
+- Padding and margins
+- Center positioned on the page
+- Background and text color
+- Hover effects on the button
+- Animate the appearance of the additional information section
+
+Please customize the design to reflect your personality.
+
+Your personal business card should be deployed using **Vercel**.
 
 ## How to use this template
 
@@ -56,12 +77,6 @@ The codebase is set up with a number of commands you can run. These are defined
 in the `package.json` file, in the `scripts` section. The following are
 available:
 
-**Lint your code to detect style and some syntax errors**
-
-```bash
-npm run lint
-```
-
 **Compile a production build of your app**
 
 ```bash
@@ -73,3 +88,15 @@ npm run build
 ```bash
 npm run preview
 ```
+
+## Add you implementation
+Use the template's HTML, CSS, and JS files for your implementation.
+
+## Commit to Github
+
+## Vercel Deployment
+
+[Vercel Video Instructions 2023](https://www.youtube.com/watch?v=wBDSPLGXgok)
+
+## Submission
+...
