@@ -9,8 +9,7 @@ code repository using this repository as a starting point.
 [See ther GitHub documentation on creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
 Once you have created your own repository from this template, you can use Git to
-clone the repository to your local machine. See our
-[reference material on Git for further details](https://github.com/product-jam-2025/course/blob/main/reference/git.md).
+clone the repository to your local machine.
 
 When you have a local copy of your repository, you can proceed with the next
 steps in this document.
