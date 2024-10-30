@@ -6,7 +6,7 @@ This is a template repo for ex1.
 
 First up, you should be using GitHub's template functionality to create your own
 code repository using this repository as a starting point.
-[See ther GitHub documentation on creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+[See the GitHub documentation on creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
 Once you have created your own repository from this template, you can use Git to
 clone the repository to your local machine.
