@@ -24,7 +24,7 @@ function getHtmlEntryFiles(srcDir) {
 export default defineConfig({
   build: {
     rollupOptions: {
-      input: getHtmlEntryFiles(__dirname),
+      input: getHtmlEntryFiles(import.meta.dirname),
     },
   },
 });

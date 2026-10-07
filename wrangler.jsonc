@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+
+  // Your site's name. It becomes part of the address:
+  // <name>.<your-subdomain>.workers.dev
+  // It must match the Worker name in the Cloudflare dashboard exactly.
+  "name": "my-website",
+
+  // Which version of the Cloudflare runtime to use. Leave this alone.
+  "compatibility_date": "2026-09-21",
+
+  // Serve the files that `npm run build` puts in dist/. There is no server code.
+  "assets": {
+    "directory": "./dist",
+  },
+}

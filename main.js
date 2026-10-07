@@ -6,12 +6,12 @@ function setupCounter() {
 
   function increment() {
     count++;
-    document.querySelector("#count").innerHTML = count;
+    document.querySelector("#count").textContent = count;
   }
 
   function decrement() {
     count--;
-    document.querySelector("#count").innerHTML = count;
+    document.querySelector("#count").textContent = count;
   }
 
   document.querySelector("#increment").addEventListener("click", increment);
