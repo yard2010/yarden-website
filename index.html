@@ -1,19 +1,80 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="he" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
+    <title>אתר אינטרנט</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="/styles/reset.css" rel="stylesheet" />
     <link href="/styles/main.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to my Website!</h1>
+    <header class="site-header">
+      <a class="site-title" href="/">אתר אינטרנט</a>
+
+      <button class="menu-button" id="open-menu" aria-label="פתיחת התפריט">
+        <img src="/icons/menu.svg" alt="" />
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <button class="menu-button" id="close-menu" aria-label="סגירת התפריט">
+          <img src="/icons/close.svg" alt="" />
+        </button>
+        <ul>
+          <li><a href="/">דף הבית</a></li>
+          <li><a href="/elements.html">אלמנטים</a></li>
+          <li>
+            <a href="https://github.com/product-jam-2027/course">הקורס</a>
+          </li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-      <p>This is a paragraph.</p>
+      <h1>ברוכים הבאים לאתר האינטרנט שלי</h1>
+
+      <p>
+        האינטרנט (ב<a href="https://he.wikipedia.org/wiki/עברית">עברית</a>:
+        מִרְשֶׁתֶת) הוא
+        <a href="https://he.wikipedia.org/wiki/רשת_תקשורת">רשת תקשורת נתונים</a>
+        בהיקף כמעט כלל־עולמי שנוצרה כתוצאה מחיבורים רבים בין
+        <a href="https://he.wikipedia.org/wiki/רשת_מחשבים">רשתות מחשבים</a>
+        שאפשרו תקשורת בין מחשבים רבים ברשתות רבות.
+      </p>
+
+      <p>
+        התשתית הרעיונית והמחקרית של האינטרנט נמצאת בתחילת שנות ה־60 במסגרת
+        מחקרים של
+        <a
+          href="https://he.wikipedia.org/wiki/הסוכנות_הצבאית_לפרויקטים_מחקריים_מתקדמים"
+          >הסוכנות הצבאית לפרויקטים מחקריים מתקדמים</a
+        >
+        של
+        <a href="https://he.wikipedia.org/wiki/משרד_ההגנה_האמריקאי"
+          >משרד ההגנה האמריקאי</a
+        >
+        (<a href="https://he.wikipedia.org/wiki/ARPA">ARPA</a>). תחילת פעילותו
+        של האינטרנט, כלומר הרשת המבצעית הראשונה (<a
+          href="https://he.wikipedia.org/wiki/ARPANET"
+          >ARPANET</a
+        >), החלה בסוף שנות ה־60, כאשר בשנת
+        <a href="https://he.wikipedia.org/wiki/1969">1969</a>
+        נשלחה ההודעה הראשונה בין שני מחשבים מחוברים. היקף רשת האינטרנט, כמות
+        המידע העצומה השמורה בשרתים והפעילות הרבה שמבוצעת באמצעות האינטרנט הפכו
+        את האינטרנט לגורם רב משמעות בהתפתחות הכלכלית, החברתית והתרבותית.
+      </p>
+
+      <div class="hello">
+        <label for="name-input">איך קוראים לך?</label>
+        <input type="text" id="name-input" placeholder="שם פרטי" />
+        <button type="button" id="hello-button">בבקשה ללחוץ על הכפתור</button>
+      </div>
     </main>
 
     <script type="module" src="/main.js"></script>
