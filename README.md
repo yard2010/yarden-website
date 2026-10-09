@@ -16,7 +16,7 @@ steps in this document.
 
 ## Getting Started
 
-You need [Node.js](https://nodejs.org) version 22 or newer. Check with
+You need [Node.js](https://nodejs.org) version 24 or newer. Check with
 `node --version` in your terminal.
 
 Ensure you have a local copy of the repository, and, in your terminal, navigate
@@ -76,24 +76,19 @@ The website is published with [Cloudflare](https://dash.cloudflare.com), for
 free. You set it up once, and after that **every push to `main` goes live by
 itself**.
 
-1. Open `wrangler.jsonc` and change `name` to your own site name (lowercase
-   letters, numbers and hyphens). It becomes part of your address. Commit and
-   push.
-2. Sign up at [dash.cloudflare.com](https://dash.cloudflare.com), then go to
-   **Compute** → **Workers & Pages** → **Create** → **Import a repository**, and
-   pick your repository.
-3. Fill in the settings:
+1. Sign up at [dash.cloudflare.com](https://dash.cloudflare.com), then go to
+   **Compute** → **Workers & Pages** → **Create**. Choose **Pages** (not
+   Workers), then **Import an existing Git repository**, and pick your
+   repository.
+2. Fill in the settings:
 
-   | Field                                  | Set it to                                |
-   | -------------------------------------- | ---------------------------------------- |
-   | **Project name**                       | exactly the `name` from `wrangler.jsonc` |
-   | **Build command**                      | leave empty                              |
-   | **Deploy command**                     | `npm run deploy`                         |
-   | **Builds for non-production branches** | off                                      |
+   | Field                      | Set it to                                  |
+   | -------------------------- | ------------------------------------------ |
+   | **Project name**           | your site name, it becomes part of the URL |
+   | **Production branch**      | `main`                                     |
+   | **Framework preset**       | `None`                                     |
+   | **Build command**          | `npm run build`                            |
+   | **Build output directory** | `dist`                                     |
 
-4. Press **Deploy**. When it finishes, Cloudflare shows your address, something
-   like `https://my-website.your-subdomain.workers.dev`.
-
-The very first time, the address may not load for up to about twenty minutes
-while Cloudflare sets up its security certificate. Nothing is wrong - wait and
-try again.
+3. Press **Save and Deploy**. When it finishes, Cloudflare shows your address,
+   something like `https://my-website.pages.dev`.
